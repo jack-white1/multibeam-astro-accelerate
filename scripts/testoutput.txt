@@ -1,0 +1,1048 @@
+=== Running astro-accelerate.sh script ===
+The executable path is  /home/frbuser/Viren/astro-accelerate-27-07-2021/
+The input_file path is  /home/frbuser/Viren/astro-accelerate-27-07-2021/input_files/GMRT.SPS.10m_newAA.txt
+The job name is  GMRT.SPS.10m_newAA
+The output directory path is  /Data1/FRB_samples/output//output/GMRT.SPS.10m_newAA
+Initial precision? = 6
+argv[1] = /home/frbuser/Viren/astro-accelerate-27-07-2021/input_files/GMRT.SPS.10m_newAA.txtargv[2] = /home/frbuser/Viren/astro-accelerate-27-07-2021//examples_dedispersion_and_analysis
+ will read input metadata 
+
+ low : 0.000000 high : 150.000000 step : 0.100000 inBin : 1 outBin : 1 
+
+ low : 150.000000 high : 300.000000 step : 0.100000 inBin : 1 outBin : 1 
+
+ low : 300.000000 high : 500.000000 step : 0.200000 inBin : 1 outBin : 1 
+
+ low : 500.000000 high : 900.000000 step : 0.400000 inBin : 1 outBin : 1 
+
+ low : 900.000000 high : 1200.000000 step : 0.600000 inBin : 1 outBin : 1 
+
+ low : 1200.000000 high : 1500.000000 step : 0.800000 inBin : 1 outBin : 1 
+
+ low : 1500.000000 high : 2000.000000 step : 1.000000 inBin : 1 outBin : 1 
+
+ sigma_cutoff :  ::: 6.000000 
+
+ sigma_constant_input :  ::: 3.000000 
+
+ max_boxcar_width_in_sec : :::0.500000 
+
+ periodicity_sigma_cutoff_input: ::: 20.000000 
+
+ periodicity_harmonics_input: ::: 32.000000 
+
+ baselinenoise_val: ::: 1 
+
+ line is: ::: file /Data1/FRB_samples/
+ :: file_name_input is :: /Data1/FRB_samples/
+ :: 
+
+ config path line is: ::: config_file_path /home/frbuser/Viren/astro-accelerate-27-07-2021/input_files/
+ 
+
+ ddtr_plan.user_dm(ddtr_plan.range()-1).high: 2000.000000 
+
+ file_name_input :: /Data1/FRB_samples/
+ 
+
+baselinenoise_val: is: 1 
+
+ fname_input::/Data1/FRB_samples/
+::test
+
+ fname_input::/Data1/FRB_samples/::test
+
+ configpath_name::/home/frbuser/Viren/astro-accelerate-27-07-2021/input_files/
+::test
+
+ configpath_name::/home/frbuser/Viren/astro-accelerate-27-07-2021/input_files/::test
+
+ will read metadata 
+
+ time file::/home/frbuser/Viren/astro-accelerate-27-07-2021/input_files/time.hdr::test
+
+ File opened :: pFILEc 
+
+ **-*-** Time stamp of first sample (MJD) : 58017.599681826483
+ 
+
+ temo_val is :: 58017.599681826483
+ 
+
+ Time stamp of first sample:: 58017.599681826483
+ :: tstart:: 58017.599681826 
+
+ Channel bandwidth size: 200.000000 
+
+ Number of channels: 4096 
+
+ Frequency of channel 1 (MHz): 500.000000 
+
+ Channel bandwidth sign: -1.000000 
+
+ Beam Integration, i.e. Number of FFT cycles: 64 
+
+ ** Time resolution ::  0.001310720 
+
+ ** Channel Bandwith (foff): -0.04882812 
+
+ fch1 is : 499.97558594 
+
+ source file::/home/frbuser/Viren/astro-accelerate-27-07-2021/input_files/radec.dat::test
+
+ File opened :: radec.dat 
+
+ ** ** ** RA_MEAN = 24.710062
+ 
+
+ temo_val is :: 24.710062
+ 
+
+ raj: 24.710062 :: tempo_val: 24.710062
+ 
+
+ ** ** ** DEC_MEAN= 33.261524
+ 
+
+ temo_val is :: 33.261524
+ 
+
+ dej: 33.261524 :: tempo_val: 33.261524
+ 
+
+ radec.dat file successfully closed 
+
+ nsamp is: 131072 	 tsamp:  0.001310720 
+
+ low freq: 300.000000 high freq: 500.000000  max_dm_val: 2000.000000 
+
+ ovrlp:: 59.022221 
+
+ filterbank_metadata.ovrlp(): 59.022221 
+
+ number of time samples to be processed only once (without overlap): 81920 
+
+ amount of telescope time to be processed only once (without overlap): 107.374184 
+Inside timestamp function: Opening reading pipe
+ command ::::::: stat -c '%y' /home/frbuser/Viren/astro-accelerate-27-07-2021/input_files/radec.dat 
+Reading timestamp
+2021-11-15 12:19:52.581132378 +0530
+
+0
+Mar  1 18:28:37 2022 - NOTICE   Detected 2 CUDA Capable device(s)
+Mar  1 18:28:37 2022 - NOTICE   Device info 0 free 5237702656 (Tesla K20c)
+Mar  1 18:28:37 2022 - WARNING  Because #include "version.h" is not created by this build system, the compute capability of the device code cannot be determined and compared with the physical device.
+Mar  1 18:28:37 2022 - WARNING  Please consider compiling using the CMakeLists file provided in the repository.
+Mar  1 18:28:37 2022 - NOTICE   Calculating strategy.
+Mar  1 18:28:37 2022 - NOTICE   Using default bandpass normalization values.
+Mar  1 18:28:37 2022 - DEBUG    Maximum number of dm trials in any of the range steps: 1536
+Mar  1 18:28:37 2022 - DEBUG    Range:	6 MAXSHIFT:	46307 Scrunch value:	1
+Mar  1 18:28:37 2022 - DEBUG    Maximum dispersive delay:	 60.695511(s).
+Mar  1 18:28:37 2022 - DEBUG    Diagonal DM:	206.979512
+Mar  1 18:28:37 2022 - DEBUG    In 2
+Mar  1 18:28:37 2022 - NOTICE   Neither zero_dm nor zero_dm_with_outliers were selected. Selection OFF.
+Mar  1 18:28:37 2022 - NOTICE   ---PIPELINE DIAGNOSTIC INFORMATION---
+Mar  1 18:28:37 2022 - DEBUG    CARD INFORMATION:
+Mar  1 18:28:37 2022 - DEBUG    Name:			Tesla K20c
+Mar  1 18:28:37 2022 - DEBUG    Compute capability:	3.5
+Mar  1 18:28:37 2022 - DEBUG    Clock rate [kHz]:	705500.000000
+Mar  1 18:28:37 2022 - DEBUG    Memory clock rate [kHz]:	2600000.000000
+Mar  1 18:28:37 2022 - DEBUG    Memory bus width [bits]:	320.000000
+Mar  1 18:28:37 2022 - DEBUG    ID # on this machine:	128
+Mar  1 18:28:37 2022 - DEBUG    Driver version:		10020
+Mar  1 18:28:37 2022 - DEBUG    l2_cache_size [bytes]:	1310720
+Mar  1 18:28:37 2022 - DEBUG    Global memory [bytes]:	5308743680
+Mar  1 18:28:37 2022 - DEBUG    Total memory [bytes]:	5308743680
+Mar  1 18:28:37 2022 - DEBUG    Free memory [bytes]:	5237702656
+Mar  1 18:28:37 2022 - DEBUG    FILTERBANK METADATA INFORMATION:
+Mar  1 18:28:37 2022 - DEBUG    az_start:		0.000000
+Mar  1 18:28:37 2022 - DEBUG    za_start:		0.000000
+Mar  1 18:28:37 2022 - DEBUG    src_raj:			0.000000
+Mar  1 18:28:37 2022 - DEBUG    src_dej:			0.000000
+Mar  1 18:28:37 2022 - DEBUG    tstart:			58017.599682
+Mar  1 18:28:37 2022 - DEBUG    tsamp:			0.001311
+Mar  1 18:28:37 2022 - DEBUG    refdm:			0.000000
+Mar  1 18:28:37 2022 - DEBUG    period:			0.000000
+Mar  1 18:28:37 2022 - DEBUG    fch1:			499.975586
+Mar  1 18:28:37 2022 - DEBUG    foff:			-0.048828
+Mar  1 18:28:37 2022 - DEBUG    sign_bw:			-1.000000
+Mar  1 18:28:37 2022 - DEBUG    fchannel:		0.000000
+Mar  1 18:28:37 2022 - DEBUG    telescope_id:		0
+Mar  1 18:28:37 2022 - DEBUG    machine_id:		0
+Mar  1 18:28:37 2022 - DEBUG    data_type:		0
+Mar  1 18:28:37 2022 - DEBUG    barycentric:		0
+Mar  1 18:28:37 2022 - DEBUG    pulsarcentric:		0
+Mar  1 18:28:37 2022 - DEBUG    nbits:			8
+Mar  1 18:28:37 2022 - DEBUG    nsamples:		131072
+Mar  1 18:28:37 2022 - DEBUG    nchans:			4096
+Mar  1 18:28:37 2022 - DEBUG    nifs:			0
+Mar  1 18:28:37 2022 - DEBUG    FREQUENCY_START:		0
+Mar  1 18:28:37 2022 - DEBUG    FREQUENCY_END:		0
+Mar  1 18:28:37 2022 - DEBUG    rawdatafile:		
+Mar  1 18:28:37 2022 - DEBUG    source_name:		
+Mar  1 18:28:37 2022 - DEBUG    N:			0
+Mar  1 18:28:37 2022 - DEBUG    m_strat:			0
+Mar  1 18:28:37 2022 - DEBUG    m_ovrlp:			0.000000
+Mar  1 18:28:37 2022 - DEBUG    DDTR STRATEGY INFORMATION:
+Mar  1 18:28:37 2022 - DEBUG    Optimization settings:
+Mar  1 18:28:37 2022 - DEBUG    		UNROLL:			4
+Mar  1 18:28:37 2022 - DEBUG    		SNUMREG:		14
+Mar  1 18:28:37 2022 - DEBUG    		SDIVINT:		8
+Mar  1 18:28:37 2022 - DEBUG    		SDIVINDM:		64
+Mar  1 18:28:37 2022 - DEBUG    ddtr+analysis:		true
+Mar  1 18:28:37 2022 - DEBUG    ddtr dm ranges:		7
+Mar  1 18:28:37 2022 - DEBUG         dm (low,high,step,inBin,outBin) 0.000000,153.600006,0.100000,1,1
+Mar  1 18:28:37 2022 - DEBUG         dm (low,high,step,inBin,outBin) 153.600006,307.200012,0.100000,1,1
+Mar  1 18:28:37 2022 - DEBUG         dm (low,high,step,inBin,outBin) 307.200012,512.000000,0.200000,1,1
+Mar  1 18:28:37 2022 - DEBUG         dm (low,high,step,inBin,outBin) 512.000000,921.599976,0.400000,1,1
+Mar  1 18:28:37 2022 - DEBUG         dm (low,high,step,inBin,outBin) 921.599976,1228.800049,0.600000,1,1
+Mar  1 18:28:37 2022 - DEBUG         dm (low,high,step,inBin,outBin) 1228.800049,1536.000000,0.800000,1,1
+Mar  1 18:28:37 2022 - DEBUG         dm (low,high,step,inBin,outBin) 1536.000000,2048.000000,1.000000,1,1
+Mar  1 18:28:37 2022 - DEBUG    ddtr max_ndms:		1536
+Mar  1 18:28:37 2022 - DEBUG    ddtr ndms elements:
+Mar  1 18:28:37 2022 - DEBUG         ndms[0]:		1536
+Mar  1 18:28:37 2022 - DEBUG         ndms[1]:		1536
+Mar  1 18:28:37 2022 - DEBUG         ndms[2]:		1024
+Mar  1 18:28:37 2022 - DEBUG         ndms[3]:		1024
+Mar  1 18:28:37 2022 - DEBUG         ndms[4]:		512
+Mar  1 18:28:37 2022 - DEBUG         ndms[5]:		384
+Mar  1 18:28:37 2022 - DEBUG         ndms[6]:		512
+Mar  1 18:28:37 2022 - DEBUG    ddtr maxshift:		46307
+Mar  1 18:28:37 2022 - DEBUG    ddtr num_tchunks:	1
+Mar  1 18:28:37 2022 - DEBUG    ddtr max_ndms:		1536
+Mar  1 18:28:37 2022 - DEBUG    t_processed size:	7
+Mar  1 18:28:37 2022 - DEBUG    t_processed elements:
+Mar  1 18:28:37 2022 - DEBUG         t_processed[0][0]:	84672
+Mar  1 18:28:37 2022 - DEBUG         t_processed[1][0]:	84672
+Mar  1 18:28:37 2022 - DEBUG         t_processed[2][0]:	84672
+Mar  1 18:28:37 2022 - DEBUG         t_processed[3][0]:	84672
+Mar  1 18:28:37 2022 - DEBUG         t_processed[4][0]:	84672
+Mar  1 18:28:37 2022 - DEBUG         t_processed[5][0]:	84672
+Mar  1 18:28:37 2022 - DEBUG         t_processed[6][0]:	84672
+Mar  1 18:28:37 2022 - DEBUG    power:			2.000000
+Mar  1 18:28:37 2022 - DEBUG    ANALYSIS STRATEGY INFORMATION:
+Mar  1 18:28:37 2022 - DEBUG    analysis sigma_cutoff:			6.000000
+Mar  1 18:28:37 2022 - DEBUG    analysis sigma_constant:			3.000000
+Mar  1 18:28:37 2022 - DEBUG    analysis max_boxcar_width_in_sec:	0.500000
+Mar  1 18:28:37 2022 - DEBUG    analysis MSD_data_info:			73762485
+Mar  1 18:28:37 2022 - DEBUG    analysis MSD_profile_size_in_bytes:	1536
+Mar  1 18:28:37 2022 - DEBUG    analysis h_MSD_DIT_width:		128
+Mar  1 18:28:37 2022 - DEBUG    analysis candidate_algorithm:		off
+Mar  1 18:28:37 2022 - DEBUG    analysis msd_baseline_noise:		true
+Mar  1 18:28:37 2022 - NOTICE   Pipeline is ready.
+
+ first check: timestamp of radec.dat is: 2021-11-15 12:19:52.581132378 +0530
+ 
+gpu_memory: 5132845056. Maximum number of tsamp: 175878. SPDT: 4608 max_ndms: 1536
+output_sizePer_chunk: 2881585152
+After check tsamp_max: 175878
+
+NOTICE: Maxshift memory needed:	361 MB.
+NOTICE: Output memory needed:	723 MB.
+
+----------------------- MSD info ---------------------------
+  Memory required by single pulse detection:3224.812 MB
+  Memory available:1925.242 MB 
+  Max samples: :73762485
+
+  DMs_per_cycle: 868  Number of boxcar filter steps: 128;
+  Memory required for MSD results for all boxcar filters: 1536 bytes;
+  Size of MSD temporary workarea: 248.138 MB;
+------------------------------------------------------------
+Output file path :: /Data1/FRB_samples/output/output/GMRT.SPS.10m_newAA 
+##### FilePath ::: /Data1/FRB_samples/output/output/GMRT.SPS.10m_newAA/Rawfile_1K@3ms_58017.599682_24.710062_33.261524.raw
+ get recorded data to be called 
+
+we are here in get_new_recorded_data
+ new_file_flag :::::: 1
+ FilePath :::::: /Data1/FRB_samples/output/output/GMRT.SPS.10m_newAA/Rawfile_1K@3ms_58017.599682_24.710062_33.261524.raw
+
+ get_new_recorded_data::filterbank_data::nchans:: 4096 
+
+ get_new_recorded_data::::::nchans:: 4096 
+
+ get_new_recorded_data::::::nbits:: 8 
+
+ get_new_recorded_data::::::nsamp:: 131072 
+
+ get_new_recorded_data::::::inputsize:: 536870912 
+
+ ovralp is greater than 59 seconds. buf_count is 0 
+
+ buf count::nsamp_ovrlp_val:: 49152 
+
+ Number of time samples: 131072 
+
+ Time samples overlap between subsequent readings: 49152
+
+ Overlapped data beigns after first 81920 samples 
+
+ Number of blocks 16 to be read at a time 
+
+ We are here with nbits: 8
+
+idDataBuffer= 8
+Attached to shared memory: 1342169088
+Max no of blocks= 16
+
+ Initialized Shared Memory !!
+ Set recNumRead and currentReadBlock to 0 !! 
+
+ one_block_SM: 67108864
+
+ telescope_time_one_block_SM: 21.474836
+
+ filterbank_data.nsamples(): 131072
+
+ nsamp  :    131072
+
+ Inversion sign (1 = invert; -1 = no inversion):::: -1.000000
+ Will write data in new raw file!!! Starting to read shared memory from 
+ currentReadBlock : 0  :::: recNumRead : 0
+ No. of WAITINGS! :: 0
+
+
+ dataBuffer->curRecord (Current Write record): 1
+
+ dataBuffer->curBlock (Current Write block): 1
+
+ MaxDataBlocks : 16
+
+ currentReadBlock : 0
+
+ recNumRead : 0
+
+ rawData size: 67108864 
+
+ Memcpy done
+Writing raw file!!!
+raw file written!!!
+
+ Number of records read: 0
+
+ #!# 79 
+
+ #!# 129 
+
+ #!# 113 
+
+ 21 sec data written in block : 0
+
+ WAITING!: Buf_count: 0 : currentReadBlock 1 :: 1
+ WAITING!: Buf_count: 0 : currentReadBlock 1 :: 2
+ WAITING!: Buf_count: 0 : currentReadBlock 1 :: 3
+ WAITING!: Buf_count: 0 : currentReadBlock 1 :: 4
+ WAITING!: Buf_count: 0 : currentReadBlock 1 :: 5
+ WAITING!: Buf_count: 0 : currentReadBlock 1 :: 6
+ WAITING!: Buf_count: 0 : currentReadBlock 1 :: 7
+ WAITING!: Buf_count: 0 : currentReadBlock 1 :: 8
+ WAITING!: Buf_count: 0 : currentReadBlock 1 :: 9
+ WAITING!: Buf_count: 0 : currentReadBlock 1 :: 10
+ No. of WAITINGS! :: 10
+
+
+ dataBuffer->curRecord (Current Write record): 2
+
+ dataBuffer->curBlock (Current Write block): 2
+
+ MaxDataBlocks : 16
+
+ currentReadBlock : 1
+
+ recNumRead : 1
+
+ rawData size: 67108864 
+
+ Memcpy done
+Writing raw file!!!
+raw file written!!!
+
+ Number of records read: 1
+
+ 21 sec data written in block : 1
+
+ WAITING!: Buf_count: 0 : currentReadBlock 2 :: 11
+ WAITING!: Buf_count: 0 : currentReadBlock 2 :: 12
+ WAITING!: Buf_count: 0 : currentReadBlock 2 :: 13
+ WAITING!: Buf_count: 0 : currentReadBlock 2 :: 14
+ WAITING!: Buf_count: 0 : currentReadBlock 2 :: 15
+ WAITING!: Buf_count: 0 : currentReadBlock 2 :: 16
+ WAITING!: Buf_count: 0 : currentReadBlock 2 :: 17
+ WAITING!: Buf_count: 0 : currentReadBlock 2 :: 18
+ WAITING!: Buf_count: 0 : currentReadBlock 2 :: 19
+ WAITING!: Buf_count: 0 : currentReadBlock 2 :: 20
+ WAITING!: Buf_count: 0 : currentReadBlock 2 :: 21
+ No. of WAITINGS! :: 21
+
+
+ dataBuffer->curRecord (Current Write record): 3
+
+ dataBuffer->curBlock (Current Write block): 3
+
+ MaxDataBlocks : 16
+
+ currentReadBlock : 2
+
+ recNumRead : 2
+
+ rawData size: 67108864 
+
+ Memcpy done
+Writing raw file!!!
+raw file written!!!
+
+ Number of records read: 2
+
+ 21 sec data written in block : 2
+
+ WAITING!: Buf_count: 0 : currentReadBlock 3 :: 22
+ WAITING!: Buf_count: 0 : currentReadBlock 3 :: 23
+ WAITING!: Buf_count: 0 : currentReadBlock 3 :: 24
+ WAITING!: Buf_count: 0 : currentReadBlock 3 :: 25
+ WAITING!: Buf_count: 0 : currentReadBlock 3 :: 26
+ WAITING!: Buf_count: 0 : currentReadBlock 3 :: 27
+ WAITING!: Buf_count: 0 : currentReadBlock 3 :: 28
+ WAITING!: Buf_count: 0 : currentReadBlock 3 :: 29
+ WAITING!: Buf_count: 0 : currentReadBlock 3 :: 30
+ WAITING!: Buf_count: 0 : currentReadBlock 3 :: 31
+ No. of WAITINGS! :: 31
+
+
+ dataBuffer->curRecord (Current Write record): 4
+
+ dataBuffer->curBlock (Current Write block): 4
+
+ MaxDataBlocks : 16
+
+ currentReadBlock : 3
+
+ recNumRead : 3
+
+ rawData size: 67108864 
+
+ Memcpy done
+Writing raw file!!!
+raw file written!!!
+
+ Number of records read: 3
+
+ 21 sec data written in block : 3
+
+ WAITING!: Buf_count: 0 : currentReadBlock 4 :: 32
+ WAITING!: Buf_count: 0 : currentReadBlock 4 :: 33
+ WAITING!: Buf_count: 0 : currentReadBlock 4 :: 34
+ WAITING!: Buf_count: 0 : currentReadBlock 4 :: 35
+ WAITING!: Buf_count: 0 : currentReadBlock 4 :: 36
+ WAITING!: Buf_count: 0 : currentReadBlock 4 :: 37
+ WAITING!: Buf_count: 0 : currentReadBlock 4 :: 38
+ WAITING!: Buf_count: 0 : currentReadBlock 4 :: 39
+ WAITING!: Buf_count: 0 : currentReadBlock 4 :: 40
+ WAITING!: Buf_count: 0 : currentReadBlock 4 :: 41
+ WAITING!: Buf_count: 0 : currentReadBlock 4 :: 42
+ No. of WAITINGS! :: 42
+
+
+ dataBuffer->curRecord (Current Write record): 5
+
+ dataBuffer->curBlock (Current Write block): 5
+
+ MaxDataBlocks : 16
+
+ currentReadBlock : 4
+
+ recNumRead : 4
+
+ rawData size: 67108864 
+
+ Memcpy done
+Writing raw file!!!
+raw file written!!!
+
+ Number of records read: 4
+
+ 21 sec data written in block : 4
+
+ WAITING!: Buf_count: 0 : currentReadBlock 5 :: 43
+ WAITING!: Buf_count: 0 : currentReadBlock 5 :: 44
+ WAITING!: Buf_count: 0 : currentReadBlock 5 :: 45
+ WAITING!: Buf_count: 0 : currentReadBlock 5 :: 46
+ WAITING!: Buf_count: 0 : currentReadBlock 5 :: 47
+ WAITING!: Buf_count: 0 : currentReadBlock 5 :: 48
+ WAITING!: Buf_count: 0 : currentReadBlock 5 :: 49
+ WAITING!: Buf_count: 0 : currentReadBlock 5 :: 50
+ WAITING!: Buf_count: 0 : currentReadBlock 5 :: 51
+ WAITING!: Buf_count: 0 : currentReadBlock 5 :: 52
+ WAITING!: Buf_count: 0 : currentReadBlock 5 :: 53
+ No. of WAITINGS! :: 53
+
+
+ dataBuffer->curRecord (Current Write record): 6
+
+ dataBuffer->curBlock (Current Write block): 6
+
+ MaxDataBlocks : 16
+
+ currentReadBlock : 5
+
+ recNumRead : 5
+
+ rawData size: 67108864 
+
+ Memcpy done
+Writing raw file!!!
+raw file written!!!
+
+ Number of records read: 5
+
+ 21 sec data written in block : 5
+
+ WAITING!: Buf_count: 0 : currentReadBlock 6 :: 54
+ WAITING!: Buf_count: 0 : currentReadBlock 6 :: 55
+ WAITING!: Buf_count: 0 : currentReadBlock 6 :: 56
+ WAITING!: Buf_count: 0 : currentReadBlock 6 :: 57
+ WAITING!: Buf_count: 0 : currentReadBlock 6 :: 58
+ WAITING!: Buf_count: 0 : currentReadBlock 6 :: 59
+ WAITING!: Buf_count: 0 : currentReadBlock 6 :: 60
+ WAITING!: Buf_count: 0 : currentReadBlock 6 :: 61
+ WAITING!: Buf_count: 0 : currentReadBlock 6 :: 62
+ WAITING!: Buf_count: 0 : currentReadBlock 6 :: 63
+ No. of WAITINGS! :: 63
+
+
+ dataBuffer->curRecord (Current Write record): 7
+
+ dataBuffer->curBlock (Current Write block): 7
+
+ MaxDataBlocks : 16
+
+ currentReadBlock : 6
+
+ recNumRead : 6
+
+ rawData size: 67108864 
+
+ Memcpy done
+Writing raw file!!!
+raw file written!!!
+
+ Number of records read: 6
+
+ 21 sec data written in block : 6
+
+ WAITING!: Buf_count: 0 : currentReadBlock 7 :: 64
+ WAITING!: Buf_count: 0 : currentReadBlock 7 :: 65
+ WAITING!: Buf_count: 0 : currentReadBlock 7 :: 66
+ WAITING!: Buf_count: 0 : currentReadBlock 7 :: 67
+ WAITING!: Buf_count: 0 : currentReadBlock 7 :: 68
+ WAITING!: Buf_count: 0 : currentReadBlock 7 :: 69
+ WAITING!: Buf_count: 0 : currentReadBlock 7 :: 70
+ WAITING!: Buf_count: 0 : currentReadBlock 7 :: 71
+ WAITING!: Buf_count: 0 : currentReadBlock 7 :: 72
+ WAITING!: Buf_count: 0 : currentReadBlock 7 :: 73
+ WAITING!: Buf_count: 0 : currentReadBlock 7 :: 74
+ No. of WAITINGS! :: 74
+
+
+ dataBuffer->curRecord (Current Write record): 8
+
+ dataBuffer->curBlock (Current Write block): 8
+
+ MaxDataBlocks : 16
+
+ currentReadBlock : 7
+
+ recNumRead : 7
+
+ rawData size: 67108864 
+
+ Memcpy done
+Writing raw file!!!
+raw file written!!!
+
+ Number of records read: 7
+
+ 21 sec data written in block : 7
+
+ No. of WAITINGS! for buf_count: 0 ::: 74
+
+
+
+ === First buffer read ===
+
+
+
+130979
+
+
+
+ buf count:: :: 0 
+
+ source_fname:: :: /home/frbuser/Viren/astro-accelerate-27-07-2021/input_files/radec.dat 
+Inside timestamp function: Opening reading pipe
+ command ::::::: stat -c '%y' /home/frbuser/Viren/astro-accelerate-27-07-2021/input_files/radec.dat 
+Reading timestamp
+2021-11-15 12:19:52.581132378 +0530
+
+0
+/Data1/FRB_samples/output/output/GMRT.SPS.10m_newAA
+mkdir: cannot create directory 'test/': File exists
+
+ buf_count: 0 timestamp is: 2021-11-15 12:19:52.581132378 +0530
+ 
+
+ radec.dat is still the same. Time stamps match 
+
+ buf count remove command: rm ./test/bcount0/global* 
+
+ buf count mkdir command: test/bcount0 
+
+ all files removed 
+NOTICE: Pipeline start/resume run_pipeline_2.
+
+NOTICE: t_processed:	84672, 0
+CORNER TURN!
+130979 4096
+32 8
+4093 512
+Performed CT: 0.000009 (GPU estimate)
+CT Gops based on 10.00 ops per channel per tsamp: 627899.934967
+CT Device memory bandwidth in GB/s: 376739.960980
+
+NOTICE: 0.000000	153.600006	0.100000	1536
+
+Amount of telescope time processed: 0.000000
+
+76.293945
+0.029493
+155
+lineshift:	363
+Using fast shared memory kernel 8-bit
+obf: 6758667911168.137695 
+obf: 6758667911168.137695 
+obf: 6758667911168.137695 
+obf: 6758667911168.137695 
+obf: 6758667911168.137695 
+obf: 6758667911168.137695 
+obf: 6758667911168.137695 
+
+----------> GPU analysis part
+  Dimensions nDMs:1536; nTimesamples:84672; inBin:1; maxshift:46307; candidate_algorithm:0 
+  SPS will run 2 batches each containing 868 DM trials. Remainder 668 DM trials
+  Selected iteration:5; maximum boxcar width requested:381; maximum boxcar width performed:384;
+
+ vals d_output_SNR:6.000000, d_output_taps:4014636672, d_peak_list_DM:607518720, d_peak_list_TS:3279683584, d_peak_list_SNR:0.000000, d_peak_list_BW:3353178880, DM_list[f];-868293120, nTimesamples:-794797824, cutoff:0.000000, local_max_list_size:868, gmem_peak_pos:84672, DM_shift:18373824, &PD_plan:902700032, max_iteration:0 
+
+ vals d_output_SNR:6.000000, d_output_taps:4014636672, d_peak_list_DM:607518720, d_peak_list_TS:3279683584, d_peak_list_SNR:0.000000, d_peak_list_BW:3353178880, DM_list[f];-868293120, nTimesamples:-794797824, cutoff:0.008576, local_max_list_size:668, gmem_peak_pos:84672, DM_shift:18373824, &PD_plan:902700032, max_iteration:868 
+
+  TOTAL TIME OF SPS:0.865024 ms
+  MSD_time: 0.273696 ms; SPDT time: 0.010784 ms; Candidate selection time: 0.005120 ms;
+----------<
+
+
+
+NOTICE: 153.600006	307.200012	0.100000	1536
+
+Amount of telescope time processed: 0.000000
+
+76.293945
+0.029493
+155
+lineshift:	363
+Using fast shared memory kernel 8-bit
+obf: 6758667911168.137695 
+obf: 6758667911168.137695 
+obf: 6758667911168.137695 
+obf: 6758667911168.137695 
+obf: 6758667911168.137695 
+obf: 6758667911168.137695 
+obf: 6758667911168.137695 
+
+----------> GPU analysis part
+  Dimensions nDMs:1536; nTimesamples:84672; inBin:1; maxshift:46307; candidate_algorithm:0 
+  SPS will run 2 batches each containing 868 DM trials. Remainder 668 DM trials
+  Selected iteration:5; maximum boxcar width requested:381; maximum boxcar width performed:384;
+
+ vals d_output_SNR:6.000000, d_output_taps:4014636672, d_peak_list_DM:607518720, d_peak_list_TS:3279683584, d_peak_list_SNR:0.000000, d_peak_list_BW:3353178880, DM_list[f];-868293120, nTimesamples:-794797824, cutoff:0.000000, local_max_list_size:868, gmem_peak_pos:84672, DM_shift:18373824, &PD_plan:902701568, max_iteration:0 
+
+ vals d_output_SNR:6.000000, d_output_taps:4014636672, d_peak_list_DM:607518720, d_peak_list_TS:3279683584, d_peak_list_SNR:0.000000, d_peak_list_BW:3353178880, DM_list[f];-868293120, nTimesamples:-794797824, cutoff:0.006240, local_max_list_size:668, gmem_peak_pos:84672, DM_shift:18373824, &PD_plan:902701568, max_iteration:868 
+
+  TOTAL TIME OF SPS:0.748512 ms
+  MSD_time: 0.265216 ms; SPDT time: 0.005120 ms; Candidate selection time: 0.004512 ms;
+----------<
+
+
+
+NOTICE: 307.200012	512.000000	0.200000	1024
+
+Amount of telescope time processed: 0.000000
+
+152.587891
+0.029493
+297
+lineshift:	505
+Using fast shared memory kernel 8-bit
+obf: 1730218985259078.750000 
+obf: 1730218985259078.750000 
+obf: 1730218985259078.750000 
+obf: 1730218985259078.750000 
+obf: 1730218985259078.750000 
+obf: 1730218985259078.750000 
+obf: 1730218985259078.750000 
+
+----------> GPU analysis part
+  Dimensions nDMs:1024; nTimesamples:84672; inBin:1; maxshift:46307; candidate_algorithm:0 
+  SPS will run 2 batches each containing 868 DM trials. Remainder 156 DM trials
+  Selected iteration:5; maximum boxcar width requested:381; maximum boxcar width performed:384;
+
+ vals d_output_SNR:6.000000, d_output_taps:4014636672, d_peak_list_DM:607518720, d_peak_list_TS:3279683584, d_peak_list_SNR:0.000000, d_peak_list_BW:3353178880, DM_list[f];-868293120, nTimesamples:-794797824, cutoff:0.000000, local_max_list_size:868, gmem_peak_pos:84672, DM_shift:18373824, &PD_plan:902703104, max_iteration:0 
+
+ vals d_output_SNR:6.000000, d_output_taps:4014636672, d_peak_list_DM:607518720, d_peak_list_TS:3279683584, d_peak_list_SNR:0.000000, d_peak_list_BW:3353178880, DM_list[f];-868293120, nTimesamples:-794797824, cutoff:0.017504, local_max_list_size:156, gmem_peak_pos:84672, DM_shift:18373824, &PD_plan:902703104, max_iteration:868 
+
+  TOTAL TIME OF SPS:0.771360 ms
+  MSD_time: 0.248640 ms; SPDT time: 0.005088 ms; Candidate selection time: 0.004672 ms;
+----------<
+
+
+
+NOTICE: 512.000000	921.599976	0.400000	1024
+
+Amount of telescope time processed: 0.000000
+
+305.175781
+0.029493
+581
+lineshift:	789
+ERROR: smem line length is too short.
+Run the auto tuner again!
+
+Using fallback failsafe kernel
+obf: 442936060226342336.000000 
+obf: 442936060226342336.000000 
+obf: 442936060226342336.000000 
+obf: 442936060226342336.000000 
+obf: 442936060226342336.000000 
+obf: 442936060226342336.000000 
+obf: 442936060226342336.000000 
+
+----------> GPU analysis part
+  Dimensions nDMs:1024; nTimesamples:84672; inBin:1; maxshift:46307; candidate_algorithm:0 
+  SPS will run 2 batches each containing 868 DM trials. Remainder 156 DM trials
+  Selected iteration:5; maximum boxcar width requested:381; maximum boxcar width performed:384;
+
+ vals d_output_SNR:6.000000, d_output_taps:4014636672, d_peak_list_DM:607518720, d_peak_list_TS:3279683584, d_peak_list_SNR:0.000000, d_peak_list_BW:3353178880, DM_list[f];-868293120, nTimesamples:-794797824, cutoff:0.000000, local_max_list_size:868, gmem_peak_pos:84672, DM_shift:18373824, &PD_plan:902704640, max_iteration:0 
+
+ vals d_output_SNR:6.000000, d_output_taps:4014636672, d_peak_list_DM:607518720, d_peak_list_TS:3279683584, d_peak_list_SNR:0.000000, d_peak_list_BW:3353178880, DM_list[f];-868293120, nTimesamples:-794797824, cutoff:0.005920, local_max_list_size:156, gmem_peak_pos:84672, DM_shift:18373824, &PD_plan:902704640, max_iteration:868 
+
+  TOTAL TIME OF SPS:0.757216 ms
+  MSD_time: 0.246496 ms; SPDT time: 0.005184 ms; Candidate selection time: 0.004352 ms;
+----------<
+
+
+
+NOTICE: 921.599976	1228.800049	0.600000	512
+
+Amount of telescope time processed: 0.000000
+
+457.763702
+0.029493
+864
+lineshift:	1072
+ERROR: smem line length is too short.
+Run the auto tuner again!
+
+Using fallback failsafe kernel
+obf: 12037567650102677504.000000 
+obf: 12037567650102677504.000000 
+obf: 12037567650102677504.000000 
+obf: 12037567650102677504.000000 
+obf: 12037567650102677504.000000 
+obf: 12037567650102677504.000000 
+obf: 12037567650102677504.000000 
+
+----------> GPU analysis part
+  Dimensions nDMs:512; nTimesamples:84672; inBin:1; maxshift:46307; candidate_algorithm:0 
+  SPS will run 1 batch containing 512 DM trials.
+  Selected iteration:5; maximum boxcar width requested:381; maximum boxcar width performed:384;
+
+ vals d_output_SNR:6.000000, d_output_taps:3713204352, d_peak_list_DM:607518720, d_peak_list_TS:3279683584, d_peak_list_SNR:0.000000, d_peak_list_BW:3323035648, DM_list[f];-928579584, nTimesamples:-885227520, cutoff:0.000000, local_max_list_size:512, gmem_peak_pos:84672, DM_shift:18373824, &PD_plan:902706176, max_iteration:0 
+
+  TOTAL TIME OF SPS:0.671040 ms
+  MSD_time: 0.263136 ms; SPDT time: 0.002976 ms; Candidate selection time: 0.005664 ms;
+----------<
+
+
+
+NOTICE: 1228.800049	1536.000000	0.800000	384
+
+Amount of telescope time processed: 0.000000
+
+610.351562
+0.029493
+1148
+lineshift:	1356
+ERROR: smem line length is too short.
+Run the auto tuner again!
+
+Using fallback failsafe kernel
+obf: 113391631417952927744.000000 
+obf: 113391631417952927744.000000 
+obf: 113391631417952927744.000000 
+obf: 113391631417952927744.000000 
+obf: 113391631417952927744.000000 
+obf: 113391631417952927744.000000 
+obf: 113391631417952927744.000000 
+
+----------> GPU analysis part
+  Dimensions nDMs:384; nTimesamples:84672; inBin:1; maxshift:46307; cMar  1 18:31:09 2022 - NOTICE   Pipeline running over next chunk.
+andidate_algorithm:0 
+  SPS will run 1 batch containing 384 DM trials.
+  Selected iteration:5; maximum boxcar width requested:381; maximum boxcar width performed:384;
+
+ vals d_output_SNR:6.000000, d_output_taps:3604824192, d_peak_list_DM:607518720, d_peak_list_TS:3279683584, d_peak_list_SNR:0.000000, d_peak_list_BW:3312197632, DM_list[f];-950255616, nTimesamples:-917741568, cutoff:0.000000, local_max_list_size:384, gmem_peak_pos:84672, DM_shift:18373824, &PD_plan:902707712, max_iteration:0 
+
+  TOTAL TIME OF SPS:0.678528 ms
+  MSD_time: 0.265600 ms; SPDT time: 0.003136 ms; Candidate selection time: 0.007200 ms;
+----------<
+
+
+
+NOTICE: 1536.000000	2048.000000	1.000000	512
+
+Amount of telescope time processed: 0.000000
+
+762.939453
+0.029493
+1431
+lineshift:	1639
+ERROR: smem line length is too short.
+Run the auto tuner again!
+
+Using fallback failsafe kernel
+obf: 566958157089764605952.000000 
+obf: 566958157089764605952.000000 
+obf: 566958157089764605952.000000 
+obf: 566958157089764605952.000000 
+obf: 566958157089764605952.000000 
+obf: 566958157089764605952.000000 
+obf: 566958157089764605952.000000 
+
+----------> GPU analysis part
+  Dimensions nDMs:512; nTimesamples:84672; inBin:1; maxshift:46307; candidate_algorithm:0 
+  SPS will run 1 batch containing 512 DM trials.
+  Selected iteration:5; maximum boxcar width requested:381; maximum boxcar width performed:384;
+
+ vals d_output_SNR:6.000000, d_output_taps:3713204352, d_peak_list_DM:607518720, d_peak_list_TS:3279683584, d_peak_list_SNR:0.000000, d_peak_list_BW:3323035648, DM_list[f];-928579584, nTimesamples:-885227520, cutoff:0.000000, local_max_list_size:512, gmem_peak_pos:84672, DM_shift:18373824, &PD_plan:902709248, max_iteration:0 
+
+  TOTAL TIME OF SPS:0.674176 ms
+  MSD_time: 0.262240 ms; SPDT time: 0.003104 ms; Candidate selection time: 0.007008 ms;
+----------<
+
+
+NOTICE: INC:	84672
+NOTICE: Pipeline ended run_pipeline_2 over chunk 1 / 1.
+ dm_low 0 dm_high 0
+ dm_low 0 dm_high 0
+ dm_low 0 dm_high 0
+ dm_low 0 dm_high 0
+ dm_low 0 dm_high 0
+ dm_low 0 dm_high 0
+ dm_low 0 dm_high 0
+cat: peak*: No such file or directory
+cat: analysed*: No such file or directory
+cat: fourier-*: No such file or directory
+cat: fourier_inter*: No such file or directory
+cat: harmo*: No such file or directory
+cat: candidate*: No such file or directory
+python: can't open file '/home/frbuser/Viren/astro-accelerate-27-07-2021/input_files/spsplotii_frb_detect.py': [Errno 2] No such file or directory
+cat: peak*: No such file or directory
+/Data1/FRB_samples/output/output/GMRT.SPS.10m_newAA
+mkdir: cannot create directory 'test/': File exists
+rm: cannot remove './test/bcount1/global*': No such file or directory
+NOTICE: Pipeline start/resume run_pipeline_2.
+
+ count_bf_count :: 1 
+
+
+ === OVERALL DEDISPERSION THROUGHPUT INCLUDING SYNCS AND DATA TRANSFERS ===
+
+(Performed Brute-Force Dedispersion: 1.85986 (GPU estimate)
+Amount of telescope time processed: 110.981285
+Number of samples processed: 84672
+Real-time speedup factor: 59.671837
+
+
+ === Buffer processed ===
+
+ RA: 24.710062 DEC: 33.261524 MJD: 58017.599682 
+
+ After setting precision and string conversion: RA: 24.710062 DEC: 33.261524 MJD: 58017.599682 buf_count: 0 
+
+ py_fname: python /home/frbuser/Viren/astro-accelerate-27-07-2021/input_files/spsplotii_frb_detect.py global_peaks.dat --mjd 58017.599682 --ra 24.710062 --dec 33.261524 --bc 0 --buf_t 107.374184 --new_file_flag 0 
+
+Output files written
+
+ Concatenation command:: cat peak* > ./test/bcount0/global_peaks.dat 
+
+
+ === Output files created | Concatenated | Python script ran ===
+
+--------------------- Timing information after processing first buffer ---------------------
+
+ Time to read first buffer: 149.725830 (GPU estimate) 
+
+ Time to process buffer number 0: 1.859875 (GPU estimate) 
+
+ Time to concatenate files and run python script for buffer number 0: 0.625125 (GPU estimate) 
+
+--------------------------------------------------------------------------------------------
+
+ buf count:: :: 1 
+
+ buf count remove command: rm ./test/bcount1/global* 
+
+ buf count mkdir command: test/bcount1 
+
+ all files removed 
+
+ we are here with buf_count: 1 
+
+ get recorded data to be called 
+
+we are here in get_new_recorded_data
+ new_file_flag :::::: 0
+ FilePath :::::: /Data1/FRB_samples/output/output/GMRT.SPS.10m_newAA/Rawfile_1K@3ms_58017.599682_24.710062_33.261524.raw
+
+ get_new_recorded_data::filterbank_data::nchans:: 4096 
+
+ get_new_recorded_data::::::nchans:: 4096 
+
+ get_new_recorded_data::::::nbits:: 8 
+
+ get_new_recorded_data::::::nsamp:: 131072 
+
+ get_new_recorded_data::::::inputsize:: 536870912 
+
+ buf count::nsamp_ovrlp_val:: 49152 
+
+ Number of time samples: 131072 
+
+ Time samples overlap between subsequent readings: 49152
+
+ Overlapped data beigns after first 81920 samples 
+
+ Number of blocks 16 to be read at a time 
+
+ We are here with nbits: 8
+
+ Before entering BCOUNT1 : 
+ recNumRead :: 5 
+ currentReadBlock :: 5 
+
+ one_block_SM: 67108864
+
+ telescope_time_one_block_SM: 21.474836
+
+ filterbank_data.nsamples(): 131072
+
+ nsamp  :    131072
+
+ Inversion sign (1 = invert; -1 = no inversion):::: -1.000000
+ Will ammend data to the previous raw file!!!
+ No. of WAITINGS! :: 0
+
+
+ dataBuffer->curRecord (Current Write record): 8
+
+ dataBuffer->curBlock (Current Write block): 8
+
+ MaxDataBlocks : 16
+
+ currentReadBlock : 5
+
+ recNumRead : 5
+
+ rawData size: 67108864 
+
+ Memcpy done
+
+ Number of records read: 0
+
+ #!# 121 
+
+ #!# 158 
+
+ #!# 157 
+
+ 21 sec data written in block : 5
+
+ No. of WAITINGS! :: 0
+
+
+ dataBuffer->curRecord (Current Write record): 8
+
+ dataBuffer->curBlock (Current Write block): 8
+
+ MaxDataBlocks : 16
+
+ currentReadBlock : 6
+
+ recNumRead : 6
+
+ rawData size: 67108864 
+
+ Memcpy done
+
+ Number of records read: 1
+
+ 21 sec data written in block : 6
+
+ No. of WAITINGS! :: 0
+
+
+ dataBuffer->curRecord (Current Write record): 8
+
+ dataBuffer->curBlock (Current Write block): 8
+
+ MaxDataBlocks : 16
+
+ currentReadBlock : 7
+
+ recNumRead : 7
+
+ rawData size: 67108864 
+
+ Memcpy done
+
+ Number of records read: 2
+
+ 21 sec data written in block : 7
+
+ WAITING!: Buf_count: 1 : currentReadBlock 8 :: 1
+ WAITING!: Buf_count: 1 : currentReadBlock 8 :: 2
+ WAITING!: Buf_count: 1 : currentReadBlock 8 :: 3
+ WAITING!: Buf_count: 1 : currentReadBlock 8 :: 4
+ WAITING!: Buf_count: 1 : currentReadBlock 8 :: 5
+ WAITING!: Buf_count: 1 : currentReadBlock 8 :: 6
+ WAITING!: Buf_count: 1 : currentReadBlock 8 :: 7
+ WAITING!: Buf_count: 1 : currentReadBlock 8 :: 8
+ WAITING!: Buf_count: 1 : currentReadBlock 8 :: 9
+ No. of WAITINGS! :: 9
+
+
+ dataBuffer->curRecord (Current Write record): 9
+
+ dataBuffer->curBlock (Current Write block): 9
+
+ MaxDataBlocks : 16
+
+ currentReadBlock : 8
+
+ recNumRead : 8
+
+ rawData size: 67108864 
+
+ Memcpy done
+Writing raw file!!!
+raw file written!!!
+
+ Number of recor
